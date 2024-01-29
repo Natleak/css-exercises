@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +18,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
+  
 }
 
 input {
@@ -23,5 +27,61 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
-  margin-bottom: 16px;
 }
+
+a {
+  text-decoration: none;
+  color: #666; /* oublié */
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  /* différence avec correction */
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+.header,
+.footer{
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; Pas utile */
+  /* margin: 0; Pas utile*/
+  padding: 16px;
+}
+.footer{
+  background-color: #eeeeee;
+}
+.content{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Partie inutile */
+
+/* .header .left-links,
+.header .right-links {
+  display: flex;
+  margin-left: 0;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 16px;
+  padding: 0px;
+  color: #666;
+}
+
+.footer .left-links,
+.footer .right-links {
+  display: flex;
+  flex-direction: column;
+  color: #666;
+  margin: 0;
+  padding: 8px;
+  max-height: 50px;
+  flex-wrap: wrap;
+  gap: 16px;
+ }  */
